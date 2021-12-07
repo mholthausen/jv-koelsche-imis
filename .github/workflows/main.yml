@@ -1,0 +1,19 @@
+name: Deploy the website to GH pages
+on:
+  pull_request:
+    branches:
+    - master
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+
+    - name: deploy website
+      uses: ./
+      with:
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.TOKEN }}
+        remote_url: https://github.com/mholthausen/jv-koelsche-imis.git
