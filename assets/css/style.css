@@ -1,1 +1,11 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+html,
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right bottom, rgba(191, 128, 64, 0.5) 0%, #40bf95 30%, #6abf40 60%, #40bf40 80%, rgba(64, 191, 149, 0.5) 100%)
+}
