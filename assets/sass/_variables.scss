@@ -1,0 +1,26 @@
+// /** Variables
+//  *
+//  * @author Michael Holthausen <mholthausen@icloud.com>
+//  * @since 2021-12-08
+//  * @version 1.0.0
+//  * @license Apache License, Version 2.0 {https://opensource.org/licenses/Apache-2.0}
+//  * @copyright (c) 2021 Michael Holthausen, Cologne
+//  */
+
+// Colors
+// see scheme "1 Colorful and Balanced" https://visme.co/blog/website-color-schemes/
+$primary: hsla(172, 47%, 48%, 1);
+$brighterPrimary: hsla(172, 47%, 78%, 1);
+$darkerPrimary: hsla(172, 47%, 18%, 1);
+$secondary: hsla(13, 69%, 63%, 1);
+$azure: hsla(175, 51%, 64%, 1);
+$orange: hsla(24, 70%, 70%, 1);
+$purple: hsla(341, 31%, 66%, 1);
+
+// Layout
+$defaultPadding: 1rem;
+
+// Typography
+$baseFontFamily: sans-serif;
+$baseFontLineHeight: 1.375;
+$baseFontSize: 16px;

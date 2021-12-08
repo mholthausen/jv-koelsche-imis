@@ -1,0 +1,18 @@
+// /** Typography
+//  *
+//  * @author Michael Holthausen <mholthausen@icloud.com>
+//  * @since 2021-12-08
+//  * @version 1.0.0
+//  * @license Apache License, Version 2.0 {https://opensource.org/licenses/Apache-2.0}
+//  * @copyright (c) 2021 Michael Holthausen, Cologne
+//  */
+
+html {
+    font-family: $baseFontFamily;
+    font-size: $baseFontSize;
+    line-height: $baseFontLineHeight;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+}

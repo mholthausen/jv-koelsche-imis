@@ -1,0 +1,58 @@
+// /** Base
+//  *
+//  * @author Michael Holthausen <mholthausen@icloud.com>
+//  * @since 2021-12-08
+//  * @version 1.0.0
+//  * @license Apache License, Version 2.0 {https://opensource.org/licenses/Apache-2.0}
+//  * @copyright (c) 2021 Michael Holthausen, Cologne
+//  */
+
+html,
+html * {
+    box-sizing: border-box;
+}
+
+nav ul,
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: $primary;
+    color: $secondary;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); //fr = fraction, also "Bruchteil"
+    grid-template-rows: 10vh calc(70vh - 2 * #{$defaultPadding}) 20vh;
+    justify-items: stretch;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    row-gap:  $defaultPadding;
+    column-gap: $defaultPadding;
+
+    grid-template-areas:
+        "header header header header"
+        "nav main main main"
+        "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    align-self: flex-end;
+}
