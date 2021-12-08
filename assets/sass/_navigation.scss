@@ -1,0 +1,57 @@
+
+// /** Navigation
+//  *
+//  * @author Michael Holthausen <mholthausen@icloud.com>
+//  * @since 2021-12-08
+//  * @version 1.0.0
+//  * @license Apache License, Version 2.0 {https://opensource.org/licenses/Apache-2.0}
+//  * @copyright (c) 2021 Michael Holthausen, Cologne
+
+.navigation {
+    // base ddefinitions
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    a:link {
+        text-decoration: none;
+    }
+
+    // Layout
+    a:link {
+        display: block;
+        padding-left: $defaultPadding;
+        padding-top: $defaultPadding/2;
+        padding-bottom: $defaultPadding/2;
+    }
+
+    // States
+    a:link {
+        color: $darkerPrimary;
+    }
+
+    a:visited {
+        color: $darkerPrimary;
+    }
+
+    a:hover {
+        color: $orange;
+        background-color: $primary;
+    }
+
+    a:active {
+        color: $orange;
+        background-color: $primary;
+    }
+
+}
+
+// templating/layout variations
+.navigation-horizontal li {
+    display: inline-block;
+    width: 100px;
+}
+
+.navigation-vertical li {
+    display: block;
+}

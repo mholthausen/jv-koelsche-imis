@@ -1,0 +1,24 @@
+// /** Header
+//  *
+//  * @author Michael Holthausen <mholthausen@icloud.com>
+//  * @since 2021-12-08
+//  * @version 1.0.0
+//  * @license Apache License, Version 2.0 {https://opensource.org/licenses/Apache-2.0}
+//  * @copyright (c) 2021 Michael Holthausen, Cologne
+//  */
+
+header {
+//   position: fixed;
+  left: 0;
+  top: 0;
+  width: calc(
+    100vw - #{$defaultPadding} * 2
+  ); // vom Browser berechnet, genauso wie CSS Varaiblen
+  // alternativ: width: calc(100vw - var(--defaultPadding * 2))
+  height: $headerHeight;
+
+  h1 {
+      font-weight: 700;
+  }
+
+}
