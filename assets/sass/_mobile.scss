@@ -1,0 +1,6 @@
+
+body {
+    min-height: 100vh;
+    /* mobile viewport fix */
+    min-height: -webkit-fill-available;
+}
